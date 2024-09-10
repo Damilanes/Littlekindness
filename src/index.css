@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100vh;
+  /* background: #161513; */
+  background: #e6ece7;
+  color: rgb(42, 39, 39);
+  font-family: 'outfit';
+}
+ 

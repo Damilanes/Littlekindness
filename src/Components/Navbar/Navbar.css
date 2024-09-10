@@ -1,0 +1,125 @@
+ .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+    background: rgb(42, 39, 39);
+    background-size: cover;
+    
+ }
+
+ .navbar h1{
+    color: white;
+    font-size: 32px;
+ }
+ 
+ .navbar h1{
+   padding-left: 2rem;
+ }
+ .nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 24px;
+ }
+
+ .nav-menu{
+   padding-right: 2rem;
+ }
+ .nav-connect{
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: grey;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+ }
+ .nav-connect:hover{
+    transform: scale(1.05);
+ }
+ .nav-menu li{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+ }
+ .anchor-link{
+    text-decoration: none;
+    /* color: white; */
+    color: white;
+ }
+ .anchor-link:hover{
+    color: rgb(225, 227, 90);
+ }
+ .nav-mob-close{
+   display: none;
+ }
+ .nav-mob-open{
+   display: none;
+ }
+ 
+ @media(max-width:768px){
+   .navbar{
+      margin: 20px 50px;
+   }
+   .navbar h1{
+      font-size: 18px;
+   }
+   /* .nav-menu{
+      display: none;
+   } */
+   .nav-mob-open{
+      display: block;
+      position: fixed;
+      right: 30px;
+   }
+   .nav-mob-close{
+      display: block;
+      position: relative;
+      top: 30px;
+      left: 290px;
+      width: 30px;
+   }
+   
+   .nav-menu{
+      position: fixed;
+      flex-direction: column;
+      align-items: start;
+      top: 0;
+      gap: 30px;
+      background-color:rgb(42, 39, 39) ;
+      width: 350px;
+      height: 70%;
+      z-index: 2;
+      transition: right 0.5s;
+      right: -350px;
+   }
+   .nav-menu li{
+      font-size: 16px;
+      padding-left: 100px;
+      flex-direction: row;
+      gap: 20px;
+   }
+ }
+ @media(max-width:768px){
+   .about{
+      gap: 80px;
+      margin: 50px 70px;
+      align-items: start;
+   }
+   .about-title h1{
+      font-size: 50px;
+      padding: 0;
+   }
+   .about-sections{
+      flex-direction: column;
+   }
+   .about-left{
+      display: none;
+   }
+   .about-right p{
+      font-size: 18px;
+      line-height: 32px;
+   }
+}   
